@@ -19,9 +19,9 @@
 			bindings = <&kp C_MUTE &lt 4 F13 &kp C_PP>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 			ledoverride;
-			r = <255>;
-			g = <255>;
-			b = <200>;
+			r = <190>;
+			g = <230>;
+			b = <80>;
 		};
 		one {
 			//PREV | PLAY/PAUSE | NEXT
