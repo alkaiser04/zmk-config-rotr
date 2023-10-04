@@ -18,6 +18,10 @@
 			//PREV | PLAY/PAUSE | NEXT
 			bindings = <&kp C_MUTE &lt 4 F13 &kp C_PP>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+			ledoverride;
+			r = <255>;
+			g = <255>;
+			b = <200>;
 		};
 		one {
 			//PREV | PLAY/PAUSE | NEXT
@@ -38,6 +42,11 @@
 			//PREV | PLAY/PAUSE | NEXT
 			bindings = <&bt BT_CLR &trans &rgb_ug RGB_TOG>;
 			sensor-bindings = <&def_lshft>;
+			ledoverride;
+			r = <255>;
+			g = <255>;
+			b = <255>;
+
 		};
 	};
 };
