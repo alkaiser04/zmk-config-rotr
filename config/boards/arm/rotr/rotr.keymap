@@ -15,7 +15,7 @@
 		compatible = "zmk,keymap";
 
 		default_layer {
-			//PREV | PLAY/PAUSE | NEXT
+			//PREV | PLAY/PAUSE | NEXT -- VOL UP | VOL DN
 			bindings = <&kp C_PREV &lt 3 C_PP &kp C_NEXT>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 			ledoverride;
@@ -24,7 +24,7 @@
 			b = <0>;
 		};
 		one {
-			//PREV | PLAY/PAUSE | NEXT
+			//LEFT | SPACE | RIGHT -- PG_DN | PG_UP
 			bindings = <&kp LEFT &lt 3 SPACE &kp RIGHT>;
 			sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
 			ledoverride;
@@ -33,7 +33,7 @@
 			b = <255>;
 		};
 		two {
-			//PREV | PLAY/PAUSE | NEXT
+			//MUTE | F13 | PLAY/PAUSE -- VOL UP | VOL DN
 			bindings = <&kp C_MUTE &lt 3 F13 &kp C_PP>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 			ledoverride;
@@ -43,7 +43,7 @@
 		};
 		shift {
 			label = "shift";
-			//PREV | PLAY/PAUSE | NEXT
+			//BLUETOOTH | ___ | RGB TOGGLE | LAYER SHIFT
 			bindings = <&bt BT_CLR &trans &rgb_ug RGB_TOG>;
 			sensor-bindings = <&def_lshft>;
 		};
