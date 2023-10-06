@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 &inc_dec_kp {
-	triggers-per-rotation = <2>;
+	triggers-per-rotation = <4>;
 };
 &def_lshft {
 	triggers-per-rotation = <4>;
@@ -37,9 +37,9 @@
 			bindings = <&kp C_MUTE &lt 3 F13 &kp C_PP>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 			ledoverride;
-			r = <238>;
-			g = <232>;
-			b = <170>;
+			r = <255>;
+			g = <255>;
+			b = <0>;
 		};
 		shift {
 			label = "shift";
